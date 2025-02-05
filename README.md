@@ -17,7 +17,7 @@
 ## MIT
 
  # Files
- # #Scripts
+ # Scripts
 ## 1. DeployRaffle.sol
 - Deploys the Raffle contract along with the required Chainlink VRF coordinator. It includes the configuration for the raffle, such as the entrance fee, interval, and gas limit for callback functions. It also deploys the mock LinkToken to ensure smooth contract interactions during testing.
 
@@ -31,7 +31,7 @@
 ## 4. Raffle.sol
 - The core raffle contract where players can enter by sending Ether. It tracks participants, processes winner selection via Chainlink VRF, and ensures that the raffle state is managed correctly (open, calculating, closed). Functions for entering, drawing, and checking the state are implemented here.
 
-#Tests
+# Tests
 ## 5. LinkToken.sol (Mock)
 - A mock version of Chainlink’s LinkToken, which is used to simulate transactions involving the VRF service. During tests, this allows the contract to interact with Chainlink VRF as if it were running on a live network.
 
