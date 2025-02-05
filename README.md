@@ -3,10 +3,14 @@
 -This project implements a decentralized raffle lottery system using Ethereum smart contracts. Players can enter the raffle by sending a fee, and the system selects a winner based on randomness provided by Chainlink VRF (Verifiable Random Function). It is designed to be modular, with various scripts that handle deployment, testing, and interaction with the contract.
 
 ## Technologies Used
--Solidity 0.8.19: Main programming language for Ethereum smart contracts.
--Chainlink VRF: For generating verifiable randomness.
--Foundry: For smart contract testing and deployment.
--Forge: Used for testing with forge-std library.
+-Solidity 0.8.19: Main programming language for Ethereum smart contracts,
+
+-Chainlink VRF: For generating verifiable randomness,
+
+-Foundry: For smart contract testing and deployment,
+
+-Forge: Used for testing with forge-std library,
+
 -Chainlink LinkToken: Mock token for handling randomness and fees.
 
 # MIT License
