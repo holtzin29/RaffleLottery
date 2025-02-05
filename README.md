@@ -12,25 +12,25 @@
 # MIT License
 
  # Files
- ##Scripts
-##1. DeployRaffle.sol
+ ## Scripts
+## 1. DeployRaffle.sol
 -Deploys the Raffle contract along with the required Chainlink VRF coordinator. It includes the configuration for the raffle, such as the entrance fee, interval, and gas limit for callback functions. It also deploys the mock LinkToken to ensure smooth contract interactions during testing.
 
-##2. Interactions.sol
+## 2. Interactions.sol
 -This script allows interaction with the deployed raffle contract. It facilitates entering the raffle, checking the contract state, and other useful functions for managing the raffle without needing to directly interact with the blockchain.
 
-##3. HelperConfig.sol
+## 3. HelperConfig.sol
 -Contains helper functions for obtaining the network configurations for different environments (e.g., local or testnets). It provides the contract addresses for Chainlink services, like VRF coordinator, LinkToken, and other configurations like entrance fees and gas lanes.
 
 ## Source
-##4. Raffle.sol
+## 4. Raffle.sol
 -The core raffle contract where players can enter by sending Ether. It tracks participants, processes winner selection via Chainlink VRF, and ensures that the raffle state is managed correctly (open, calculating, closed). Functions for entering, drawing, and checking the state are implemented here.
 
 ## Tests
-##5. LinkToken.sol (Mock)
+## 5. LinkToken.sol (Mock)
 -A mock version of Chainlink’s LinkToken, which is used to simulate transactions involving the VRF service. During tests, this allows the contract to interact with Chainlink VRF as if it were running on a live network.
 
-##6. RaffleTest.sol
+## 6. RaffleTest.sol
 -A comprehensive test suite for the raffle contract. It includes unit tests to ensure the raffle logic functions correctly, such as entering the raffle, validating the entrance fee, emitting events, and performing upkeep. It also tests the randomness of the winner selection and ensures the raffle behaves as expected in different states.
 
 ##Inspiration: 
